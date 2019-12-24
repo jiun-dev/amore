@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/*---------------setting-----------------*/
+html,body {
+    width:100%;
+    height: 100%;
+}
+body {
+    font:16px/1.4 "Nanum Gothic",sans-serif;
+    color:#333;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-weight: 800;
+}
+ul {list-style:none;}
+
+a,a:link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.notext {
+    display: none;
+}
+
+* {box-sizing:border-box; margin: 0; padding: 0; vertical-align: top; border: 0; outline: 0;}
+
+
+
+.notext {
+	display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------reset-------------------*/
+
+/*-----------------header-------------------*/
+
+header {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 10%;
+}
+
+.logo {
+	padding: 2% 7%;
+}
+/*-----------------nav-------------------*/
+#nav {
+	font-size: 30px;
+	position: relative;
+	float: right;
+	width: 10px;
+	margin-top: -50px;
+	padding: 0 5%;
+	background-color: white;
+}
+
+#nav_menu {
+	display: none;
+	width: 150px;
+	height: 250px;
+	background-color: black; opacity: 0.8;
+	color: white;
+	float: right;
+	line-height: 25px;
+	padding: 50px 50px;
+}
+
+
+/*------------------section-----------------*/
+
+section {
+	margin-left: 10%;
+	height: 60%;
+	padding-top: 20%;
+}
+
+/*------------------typing-----------------*/
+.typewriter h1 {
+	font-size: 25px;
+	text-align: center;
+	color: black;
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid black; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /*Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 2.5s steps(45, end),
+	  blink-caret .5s step-end infinite;
+	/* padding-bottom: 250px ; */
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 15% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: black }
+  }
+
+/*------------------banner1-----------------*/
+
+.banner_1 {
+	margin-top: 150px;
+	float: left;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.banner_1 ul li {
+	display: inline;
+	
+}
+
+.banner_1 ul li img {
+	width: 620px;
+	height: 400px;
+	transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+	
+}
+
+.banner_1 ul li img:hover {
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*------------------banner2-----------------*/
+
+.banner_2 {
+	float: left;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.banner_2 img {
+	width: 1240px;
+	height: 400px;
+	transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.banner_2 img:hover {
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*------------------banner3-----------------*/
+
+.banner_3 {
+	float: left;
+	text-align: center;
+	padding: 5px 5px;
+	
+}
+
+.banner_3 ul li {
+	display: inline;
+	
+}
+
+.banner_3 ul li img {
+	width: 620px;
+	height: 400px;
+	transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.banner_3 ul li img:hover {
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*------------------banner4-----------------*/
+
+.banner_4 {
+	float: left;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.banner_4 img {
+	width: 1240px;
+	height: 400px;
+	transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.banner_4 img:hover {
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*------------------more_button-----------------*/
+
+#more {
+	width: 100px;
+	height: 50px;
+	margin-top: 1850px;
+	text-align: center;
+	margin-left: 47%;
+	border: 1px solid black;
+	padding-top: 20px;
+}
+
+/*------------------footer-----------------*/
+
+footer {
+	margin-top: 1650px;
+	padding-top: 150px;
+	padding-left: 150px;
+	height: 30%;
+}
+
+.copy {
+	margin-top: 25px;
+	font-weight: 800;
+}
