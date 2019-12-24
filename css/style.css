@@ -301,3 +301,9 @@ footer {
 	margin-top: 25px;
 	font-weight: 800;
 }
+
+/*mediaqeury*/
+
+@media ( min-width:0px) and ( max-width:500px) {
+    
+}
